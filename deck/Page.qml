@@ -93,7 +93,7 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         text: page.state && page.state.temperature > 0
           ? page.state.temperature + " K"
-          : "—"
+          : "n/a"
         color: Color.foreground
         font.family: Style.font.family
         font.pixelSize: Style.font.body
