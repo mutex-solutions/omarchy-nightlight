@@ -28,48 +28,6 @@ Item {
     width: parent.width
     spacing: Style.space(2)
 
-    // ---- hero ----
-    Item {
-      width: parent.width
-      height: Style.space(44)
-
-      Text {
-        id: heroGlyph
-        anchors.left: parent.left
-        anchors.verticalCenter: parent.verticalCenter
-        width: Style.space(30)
-        text: page.state && page.state.active ? "☾" : "☼"
-        color: page.state && page.state.active ? Color.accent : Color.foreground
-        font.family: Style.font.family
-        font.pixelSize: Style.font.display
-        horizontalAlignment: Text.AlignHCenter
-      }
-
-      Column {
-        anchors.left: heroGlyph.right
-        anchors.leftMargin: Style.space(10)
-        anchors.right: parent.right
-        anchors.verticalCenter: parent.verticalCenter
-        spacing: 2
-
-        Text {
-          width: parent.width
-          text: "Night light"
-          color: Color.foreground
-          font.family: Style.font.family
-          font.pixelSize: Style.font.title
-          font.bold: true
-        }
-
-        Caps {
-          width: parent.width
-          text: page.state && page.state.active ? "WARM SCREEN" : "OFF"
-        }
-      }
-    }
-
-    Rule { }
-
     // ---- switch row ----
     Item {
       width: parent.width
