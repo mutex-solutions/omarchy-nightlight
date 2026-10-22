@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "mutex-solutions.nightlight",
   "name": "Night light",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "mutex-solutions",
   "license": "MIT",
   "description": "Night light toggle for Omarchy, as a bar widget or a Deck section.",

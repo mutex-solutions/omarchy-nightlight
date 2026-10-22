@@ -17,7 +17,7 @@ Item {
 
   readonly property bool active: enabled
   readonly property string label: "Night light"
-  readonly property string icon: "☾"
+  readonly property string icon: "󰖔"
   readonly property string detail: enabled
     ? (temperature > 0 ? temperature + " K" : "on")
     : "off"
