@@ -5,6 +5,8 @@ import qs.Commons
 Item {
   id: page
 
+  Translations { id: strings; directory: Qt.resolvedUrl("../i18n") }
+
   property var state: null
   property var host: null
 
@@ -37,7 +39,7 @@ Item {
         anchors.left: parent.left
         anchors.leftMargin: Style.space(8)
         anchors.verticalCenter: parent.verticalCenter
-        text: "Enabled"
+        text: strings.t("nightlight.enabled")
         color: Color.foreground
         font.family: Style.font.family
         font.pixelSize: Style.font.body
@@ -81,7 +83,7 @@ Item {
         anchors.left: parent.left
         anchors.leftMargin: Style.space(8)
         anchors.verticalCenter: parent.verticalCenter
-        text: "Temperature"
+        text: strings.t("nightlight.temperature")
         color: Util.alpha(Color.foreground, 0.55)
         font.family: Style.font.family
         font.pixelSize: Style.font.body
@@ -108,7 +110,7 @@ Item {
       height: Style.space(26)
       verticalAlignment: Text.AlignVCenter
       leftPadding: Style.space(8)
-      text: "Managed by Omarchy's night light service"
+      text: strings.t("nightlight.managedByOmarchySNightLightService")
       color: Util.alpha(Color.foreground, 0.45)
       font.family: Style.font.family
       font.pixelSize: Style.font.caption

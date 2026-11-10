@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- The UI ships an English translation catalog with live language bindings.
+
 ## 0.1.1
 
 - The tile glyph is a Material icon, matching the other Deck tiles.

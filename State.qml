@@ -1,6 +1,7 @@
 import QtQuick
 import Quickshell
 import Quickshell.Io
+import qs.Commons
 
 // Night light state.
 //
@@ -12,11 +13,13 @@ import Quickshell.Io
 Item {
   id: s
 
+  Translations { id: strings; directory: Qt.resolvedUrl("i18n") }
+
   property bool enabled: false
   property int temperature: 0
 
   readonly property bool active: enabled
-  readonly property string label: "Night light"
+  readonly property string label: strings.t("nightlight.nightLight")
   readonly property string icon: "󰖔"
   readonly property string detail: enabled
     ? (temperature > 0 ? temperature + " K" : "on")
